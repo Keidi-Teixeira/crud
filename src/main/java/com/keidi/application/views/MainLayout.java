@@ -3,8 +3,6 @@ package com.keidi.application.views;
 
 import com.keidi.application.components.appnav.AppNav;
 import com.keidi.application.components.appnav.AppNavItem;
-import com.keidi.application.views.about.AboutView;
-import com.keidi.application.views.helloworld.HelloWorldView;
 import com.vaadin.flow.component.applayout.AppLayout;
 import com.vaadin.flow.component.applayout.DrawerToggle;
 import com.vaadin.flow.component.html.Footer;
@@ -53,8 +51,7 @@ public class MainLayout extends AppLayout {
         // For documentation, visit https://github.com/vaadin/vcf-nav#readme
         AppNav nav = new AppNav();
 
-        nav.addItem(new AppNavItem("Hello World", HelloWorldView.class, "la la-globe"));
-        nav.addItem(new AppNavItem("About", AboutView.class, "la la-file"));
+        nav.addItem(new AppNavItem("Hello World", ClienteView.class, "la la-globe"));
 
         return nav;
     }
